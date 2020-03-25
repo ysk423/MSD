@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- common -->
+    <string name="app_name">Make SHINO drunk!</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="nice">NICE</string>
+    <string name="start">START</string>
+
+    <!-- activity_start -->
+    <string name="ho_switch">HO</string>
+    <string name="redWine_point">30point</string>
+    <string name="beer_point">10point</string>
+
+    <!-- activity_resultと activity_result_high-->
+    <string name="try_again">Try again!</string>
+    <string name="shino_dislike">SHINO doesnt like Whiskey</string>
+    <string name="shino_status">SHINO already drunk</string>
+
+</resources>
