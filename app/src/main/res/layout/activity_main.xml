@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Score : 300"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Touch Start!"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/box"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/orange"/>
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:src="@drawable/black"/>
+
+        <ImageView
+            android:id="@+id/black2"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:src="@drawable/black2"/>
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:src="@drawable/pink"/>
+
+
+        //debug用のメッセージ
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/debuginfo"
+                android:layout_width="216dp"
+                android:layout_height="52dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.957"
+                android:text="debug"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
