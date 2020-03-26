@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
 
         scoreLabel = findViewById(R.id.scoreLabel);
         startLabel = findViewById(R.id.startLabel);
-        debuginfo = findViewById(R.id.debuginfo);
+        debuginfo = findViewById(R.id.debuginfo);//debug要のレベル(HO Mode表示）
         box = findViewById(R.id.box); //これが女性アイコン
-        orange = findViewById(R.id.orange);
-        pink = findViewById(R.id.pink);
-        black = findViewById(R.id.black);
-        black2 = findViewById(R.id.black2);
+        orange = findViewById(R.id.orange);//beerアイコン
+        pink = findViewById(R.id.pink);//ワインアイコン
+        black = findViewById(R.id.black);//ウイスキーアイコン
+        black2 = findViewById(R.id.black2);//ウイスキーアイコン
 
         // Screen Size
         WindowManager wm = getWindowManager();
@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         screenWidth = size.x;
         screenHeight = size.y;
 
+        //アイテムの移動初期値
         boxSpeed = Math.round(screenHeight / 120f);
         orangeSpeed = Math.round(screenWidth / 90f);
         pinkSpeed = Math.round(screenWidth / 90f);
@@ -288,6 +289,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //戻るボタンの無効化
     @Override
     public void onBackPressed() { }
 
