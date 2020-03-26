@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.io.File;
+
 public class RecodeRoomActivity extends AppCompatActivity {
 
     private TextView textView;
@@ -28,6 +30,10 @@ public class RecodeRoomActivity extends AppCompatActivity {
         editTextScoreresult = findViewById(R.id.edit_text_scoreresult);
 
         textView = findViewById(R.id.text_view);
+
+        //起動時にScoreDB.dbを毎回削除
+        //開発中のみの処理、デリーとボタン実装出来たら消す
+        deleteDatabase("ScoreDB.db");
 
         Button insertButton = findViewById(R.id.button_insert);
         insertButton.setOnClickListener(new View.OnClickListener() {
@@ -108,6 +114,7 @@ public class RecodeRoomActivity extends AppCompatActivity {
 
         db.insert("scoredb", null, values);
     }
+
 
     public void tryAgain(View view) {
         startActivity(new Intent(getApplicationContext(), StartActivity.class));
