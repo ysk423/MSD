@@ -42,6 +42,7 @@ public class ResultActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), StartActivity.class));
     }
 
+
     public void recode(View view) {
         startActivity(new Intent(getApplicationContext(), RecodeRoomActivity.class));
     }
